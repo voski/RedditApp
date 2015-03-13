@@ -20,6 +20,8 @@ class User < ActiveRecord::Base
     primary_key: :id
   )
 
+  has_many :posts
+
   def self.generate_session_token
     SecureRandom.urlsafe_base64
   end

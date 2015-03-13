@@ -1,0 +1,28 @@
+<h3>Make a new post!</h3>
+<form action="<%= posts_url %>" method="post">
+  <%= auth_input %>
+  <label for="post_title">Title</label>
+  <input id="post_title" type="text" name="post[title]" value="<%= @post.title %>"><br/>
+
+  <label for="post_url">link url</label>
+  <input id="post_url" type="text" name="post[url]" value="<%= @post.url %>"><br/>
+
+  <label for="post_content">Text</label><br/>
+  <textarea name="post[content]" id="post_content"><%= @post.content %></textarea><br/>
+
+  <input type="hidden" name="post[author_id]" value="<%= current_user.id %>">
+
+
+  <label for="sub_id">Sub</label>
+  <select id=sub_id name="post[sub_id]">
+    <% @subs.each do |sub| %>
+      <option
+        <%= sub == @post.sub ? "selected" : "" %>
+        value="<%= sub.id %>">
+        <%= sub.title %>
+      </option>
+    <% end %>
+  </select><br/>
+
+  <input type="submit" value="make post">
+</form>

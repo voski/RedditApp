@@ -1,5 +1,5 @@
 class SubsController < ApplicationController
-  before_action :ensure_moderator, only: [:edit]
+  before_action :ensure_moderator, only: [:edit, :update]
 
   def new
     if logged_in?
@@ -35,8 +35,6 @@ class SubsController < ApplicationController
   end
 
   def update
-    @sub = Sub.find(params[:id])
-
     if @sub.update(sub_params)
       flash.notice = 'Sub successfully updated!'
       redirect_to sub_url(@sub)

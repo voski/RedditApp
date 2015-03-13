@@ -18,6 +18,8 @@ class Sub < ActiveRecord::Base
     primary_key: :id
   )
 
+  has_many :posts
+
   def is_moderator?(user)
     user.id == self.moderator_id
   end
