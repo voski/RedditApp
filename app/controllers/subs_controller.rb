@@ -14,7 +14,7 @@ class SubsController < ApplicationController
   end
 
   def index
-    render json: Sub.all
+    @subs = Sub.all
   end
 
   def ensure_moderator
@@ -45,7 +45,7 @@ class SubsController < ApplicationController
   end
 
   def show
-    render json: Sub.find(params[:id])
+    @sub = Sub.find(params[:id])
   end
 
   private

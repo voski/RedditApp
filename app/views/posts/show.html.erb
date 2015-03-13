@@ -2,3 +2,8 @@
 <p>
   content goes here
 </p>
+
+<p>
+  Subs for this post<br/>
+  <%= link_to "#{@post.sub.title}", sub_url(@post.sub) %>
+</p>

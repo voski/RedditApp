@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :ensure_author, only: [:edit. :update]
+  before_action :ensure_author, only: [:edit, :update]
 
   def show
     @post = Post.find(params[:id])
@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   def new
     @subs = Sub.all
-    @post = Post.new
+    @post = Post.new(sub_id: params[:post][:sub_id])
   end
 
   def create
