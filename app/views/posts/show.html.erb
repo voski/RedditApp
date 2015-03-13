@@ -1,9 +1,17 @@
 <h1><%= @post.title %></h1>
-<p>
-  content goes here
-</p>
+<% @post.attributes.each do |key, val| %>
+  <% if %w(url content).include?(key) %>
+    <p>
+      <%= "#{key.upcase}:: #{val}" %>
+    </p>
+  <% end %>
+<% end %>
 
 <p>
   Subs for this post<br/>
   <%= link_to "#{@post.sub.title}", sub_url(@post.sub) %>
+</p>
+
+<p>
+  <%= button_to "Edit", edit_post_url(@post), method: :get %>
 </p>
