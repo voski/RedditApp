@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @subs = Sub.all
 
     if @post.save
       flash.notice = "post succesfully created"

@@ -14,7 +14,7 @@ end
 
 # subs
 30.times do
-  Sub.create(title: Faker::Lorem.words(4, true), description: Faker::Hacker.say_something_smart, moderator_id: rand(1..30))
+  Sub.create(title: Faker::Lorem.words(4, true).join, description: Faker::Hacker.say_something_smart, moderator_id: rand(1..30))
 end
 # posts
 200.times do

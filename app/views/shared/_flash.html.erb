@@ -1,0 +1,7 @@
+<%= flash[:error] %>
+<%= flash[:notice] %>
+<ul>
+  <% flash[:errors] && flash[:errors].each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
