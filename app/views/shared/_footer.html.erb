@@ -1,9 +1,9 @@
 <footer>
   <% if logged_in? %>
     <form action=<%= session_url %> method="post">
+      <%= auth_input %>
       <input type="hidden" name="_method" value="delete">
-      <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
-      <input type="submit" value="Log Out">
+      <input type="submit" value="Log out <%= current_user.username %>">
     </form>
   <% end %>
 </footer>

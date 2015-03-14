@@ -8,10 +8,13 @@
   <%= button_to "All Subs", subs_url, method: :get%>
 </p>
 <h4>Posts</h4>
+
 <div class="content">
   <ul>
     <% @sub.posts.each do |post| %>
-      <li><%= link_to "#{post.title}", post_url(post) %></li>
+      <li>
+        <%= link_to "#{post.title}", post_url(post) %>
+      </li>
     <% end %>
   </ul>
 </div>
