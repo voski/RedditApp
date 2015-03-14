@@ -9,7 +9,9 @@
 
 <p>
   Subs for this post<br/>
-  <%= link_to "#{@post.sub.title}", sub_url(@post.sub) %>
+  <% @post.subs.each do |sub| %>
+    <%= link_to "#{sub.title}", sub_url(sub) %>
+  <% end %>
 </p>
 
 <p>

@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :ensure_author, only: [:edit, :update]
+  before_action :ensure_logged_in, only: [:new]
 
   def show
     @post = Post.find(params[:id])
@@ -7,7 +8,7 @@ class PostsController < ApplicationController
 
   def new
     @subs = Sub.all
-    @post = Post.new(sub_id: params[:post][:sub_id])
+    @post = Post.new
   end
 
   def create
@@ -40,11 +41,13 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     unless @post.is_author?(current_user)
       flash.notice = "You are not the author of this post"
-      redirect_to post_url(post)
+      redirect_to post_url(@post)
     end
   end
 
+  private
+
   def post_params
-    params.require(:post).permit(:title, :url, :content, :sub_id, :author_id)
+    params.require(:post).permit(:title, :url, :content, :author_id, sub_ids: [])
   end
 end
