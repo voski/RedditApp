@@ -1,23 +1,5 @@
 <h3>Sub: <%= @sub.title %></h3>
-<div class="sub_nav_bar">
-  <ul>
-    <li>
-      <form action='<%= new_post_url %>' method="get">
-        <input type="hidden" name="post[sub_id]" value="<%= @sub.id %>">
-        <input type="submit" value="New Post">
-      </form>
-    </li>
-    <li>
-      <%= button_to "All Subs", subs_url, method: :get%>
-    </li>
-    <% if @sub.is_moderator?(current_user) %>
-      <li>
-        <%= button_to "Edit Sub", edit_sub_url, method: :get%>
-      </li>
-    <% end %>
-</ul>
-</div>
-
+<%= sub_nav_bar %>
 <h4>Posts</h4>
 
 <div class="content">
