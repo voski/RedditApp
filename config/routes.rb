@@ -2,10 +2,13 @@ Rails.application.routes.draw do
   root "subs#index"
   resources :users
   resource :session, only: [:new, :create, :destroy]
-  resources :subs, except: [:destroy]
+  resources :subs, except: [:destroy] do
+    resources :comments, only: :new
+  end
+  resources :comments, only: :create
   resources :posts, except: [:index, :destroy]
 end
- 
+
 # Prefix Verb   URI Pattern               Controller#Action
 #   root GET    /                         subs#show
 #  users GET    /users(.:format)          users#index
@@ -32,3 +35,5 @@ end
 #   post GET    /posts/:id(.:format)      posts#show
 #        PATCH  /posts/:id(.:format)      posts#update
 #        PUT    /posts/:id(.:format)      posts#update
+# new_sub_comment GET    /subs/:sub_id/comments/new(.:format) comments#new
+#        comments POST   /comments(.:format)                  comments#create
