@@ -17,3 +17,11 @@
 .header_nav_bar li {
   display: inline;
 }
+
+.sub_nav_bar li , form {
+  display: inline;
+}
+
+.sub_nav_bar li {
+  padding: 10px;
+}
