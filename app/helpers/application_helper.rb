@@ -14,4 +14,21 @@ module ApplicationHelper
 
     html.html_safe
   end
+
+  def header_nav
+    html = <<-HTML
+      <div class="header_nav_bar">
+        <ul>
+          <li>
+            #{link_to "Sign up", new_user_url}
+          </li>
+          <li>
+            #{link_to "Sign In", new_session_url}
+          </li>
+        </ul>
+      </div>
+    HTML
+
+    html.html_safe
+  end
 end

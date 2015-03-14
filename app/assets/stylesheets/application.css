@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.header_nav_bar li {
+  display: inline;
+}

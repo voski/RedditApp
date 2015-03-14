@@ -14,8 +14,8 @@ class SessionsController < ApplicationController
       login_user(@user)
       redirect_to subs_url
     else
-      flash.now[:errors] = @user.errors.full_messages
-      render :new
+      flash[:error] = "Invalid credentials try again or sign up"
+      redirect_to new_session_url
     end
   end
 
