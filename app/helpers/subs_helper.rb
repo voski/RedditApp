@@ -5,7 +5,7 @@ module SubsHelper
         <ul>
           <li>
             <form action='#{new_post_url}' method="get">
-              <input type="hidden" name="post[sub_id]" value="#{@sub.id}">
+              <input type="hidden" name="post[sub_ids][]" value="#{@sub.id}">
               <input type="submit" value="New Post">
             </form>
           </li>

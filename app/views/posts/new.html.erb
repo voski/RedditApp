@@ -15,7 +15,10 @@
   <input type="hidden" name="post[sub_ids][]" value="">
   <% @subs.each do |sub| %>
     <label>
-      <input type="checkbox" name="post[sub_ids][]" value="<%= sub.id %>">
+      <input type="checkbox"
+      name="post[sub_ids][]"
+      value="<%= sub.id %>"
+      <%= "checked" if params[:post][:sub_ids].include?((sub.id.to_s)) %> >
       <%= sub.title %>
     </label><br/>
   <% end %>

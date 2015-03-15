@@ -1,18 +1,26 @@
-<h1><%= @post.title %></h1>
+<h1>Post:: <%= @post.title %></h2>
+
+<div name="post_contents">
+  <h2>post attributes</h2>
 <% @post.attributes.each do |key, val| %>
   <% if %w(url content).include?(key) %>
     <p>
-      <%= "#{key.upcase}:: #{val}" %>
+      <%= "<strong>#{key.upcase}</strong><br>#{h(val)}".html_safe %>
     </p>
   <% end %>
 <% end %>
 
-<p>
-  Subs for this post<br/>
+<div name="post_subs">
+  <h3>Post subs</h3>
   <% @post.subs.each do |sub| %>
     <%= link_to "#{sub.title}", sub_url(sub) %>
   <% end %>
-</p>
+</div>
+
+<div class="post_comments">
+  <% @post.comments %>
+
+</div>
 
 <p>
   <%= button_to "Edit", edit_post_url(@post), method: :get %>

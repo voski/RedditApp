@@ -33635,3 +33635,2983 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:32:23 -0700
   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
   [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."author_id" = $1  [["author_id", 1]]
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:35:14 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.3ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:35:14 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:35:33 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 140ms (Views: 137.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:35:34 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:35:44 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.9ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 122ms (Views: 119.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:35:44 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:36:05 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 141ms (Views: 138.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:36:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:36:06 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:36:31 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.4ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 130ms (Views: 127.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:36:31 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:36:32 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:36:34 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.3ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 135ms (Views: 131.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:36:34 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:36:45 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.4ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.8ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 128ms (Views: 126.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:36:45 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:37:34 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.3ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 149ms (Views: 146.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:37:34 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:37:45 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.4ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 131ms (Views: 125.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:37:45 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:38:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 125ms (Views: 122.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:38:12 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:38:43 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (1.4ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 125ms (Views: 120.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:38:43 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:38:56 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 124.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:38:57 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:39:09 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.3ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.3ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 124ms (Views: 121.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:39:09 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:39:17 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.3ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 126ms (Views: 122.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:39:18 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:40:08 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.4ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 126ms (Views: 123.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:40:08 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:40:08 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (2.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 118ms (Views: 114.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:40:09 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:40:29 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mSub Load (0.6ms)[0m  [1mSELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1[0m  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 131ms (Views: 128.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:40:29 -0700
+
+
+Started GET "/posts/8" for ::1 at 2015-03-14 17:40:38 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mSub Load (0.3ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 8]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.2ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 122ms (Views: 119.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:40:39 -0700
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1  [["author_id", 1]]
+
+
+Started GET "/" for ::1 at 2015-03-14 17:42:05 -0700
+Processing by SubsController#index as HTML
+  [1m[35mSub Load (1.1ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered subs/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:05 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:05 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:05 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:05 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:42:06 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:42:08 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.3ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (10.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 138.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/new?post%5Bsub_id%5D=11" for ::1 at 2015-03-14 17:42:10 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_id"=>"11"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 156ms (Views: 153.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:42:11 -0700
+
+
+Started GET "/posts/new?post%5Bsub_id%5D=11" for ::1 at 2015-03-14 17:42:55 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_id"=>"11"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 188ms (Views: 159.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:42:55 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:43:07 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.2ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (48.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.6ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 195ms (Views: 179.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:43:08 -0700
+
+
+Started GET "/posts/new?post%5Bsub_id%5D%5B%5D=11" for ::1 at 2015-03-14 17:43:08 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_id"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 118ms (Views: 115.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:43:09 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:44:08 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.3ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (32.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.6ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 224ms (Views: 205.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:44:09 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 132ms (Views: 130.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:09 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:44:14 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (7.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 154ms (Views: 123.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:14 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:44:16 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.5ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (13.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.8ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 146ms (Views: 140.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:16 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:44:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (1.6ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 120ms (Views: 116.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:18 -0700
+
+
+Started POST "/posts" for ::1 at 2015-03-14 17:44:23 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"UZK7ekGORNX54J5HEb/1/QjuiLJcaH3U2H2gS2Ek3JhzbjKNO2Knou/OkVRY32cZEFwjxM8Y95KiOH2JoOlAug==", "post"=>{"title"=>"dafafaf", "url"=>"", "content"=>"", "author_id"=>"1", "sub_ids"=>["", "11"]}}
+  [1m[35mSub Load (0.3ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "url", "content", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "dafafaf"], ["url", ""], ["content", ""], ["author_id", 1], ["created_at", "2015-03-15 00:44:23.781094"], ["updated_at", "2015-03-15 00:44:23.781094"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "post_subs" ("sub_id", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["sub_id", 11], ["post_id", 203], ["created_at", "2015-03-15 00:44:23.783780"], ["updated_at", "2015-03-15 00:44:23.783780"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/203
+Completed 302 Found in 26ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/posts/203" for ::1 at 2015-03-14 17:44:23 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"203"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 203]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs" INNER JOIN "post_subs" ON "subs"."id" = "post_subs"."sub_id" WHERE "post_subs"."post_id" = $1  [["post_id", 203]]
+  Rendered posts/show.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 143ms (Views: 139.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:23 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:24 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:44:25 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.3ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 116ms (Views: 113.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:44:27 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.6ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 137ms (Views: 133.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:44:28 -0700
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:44:54 -0700
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.2ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (114080.5ms)
+  [1m[36mCACHE (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (5.1ms)
+  Rendered shared/_flash.html.erb (1.1ms)
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (16.6ms)
+Completed 200 OK in 115046ms (Views: 115024.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:46:49 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.7ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (49.4ms)
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (4.0ms)
+  Rendered shared/_flash.html.erb (0.9ms)
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (7.2ms)
+Completed 200 OK in 1012ms (Views: 845.3ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/subs/11" for ::1 at 2015-03-14 17:47:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mSub Load (0.6ms)[0m  SELECT  "subs".* FROM "subs" WHERE "subs"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "post_subs" ON "posts"."id" = "post_subs"."post_id" WHERE "post_subs"."sub_id" = $1  [["sub_id", 11]]
+  Rendered subs/show.html.erb within layouts/application (80.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (1.2ms)
+  Rendered shared/_flash.html.erb (0.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 467ms (Views: 394.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:06 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:06 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:47:06 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:06 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:47:07 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:47:08 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 133ms (Views: 130.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:47:08 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:47:36 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (27.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 155ms (Views: 152.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:47:36 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:47:38 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.6ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 126.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:47:38 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:16 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 111ms (Views: 108.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:17 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.6ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 109ms (Views: 105.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:17 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.8ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 125.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.8ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.7ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 104ms (Views: 101.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.7ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:18 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:18 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:19 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:34 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 118ms (Views: 114.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:34 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:48:54 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:48:54 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:49:14 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.4ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 145ms (Views: 143.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:49:14 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:49:22 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mSub Load (0.5ms)[0m  SELECT "subs".* FROM "subs"
+  Rendered posts/new.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError - undefined method `to_i' for ["11"]:Array:
+  app/views/posts/new.html.erb:21:in `block in _app_views_posts_new_html_erb___910744682732088934_70333680563040'
+  activerecord (4.2.0) lib/active_record/relation/delegation.rb:46:in `each'
+  app/views/posts/new.html.erb:16:in `_app_views_posts_new_html_erb___910744682732088934_70333680563040'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/56c18b3968fc0d2b/variables" for ::1 at 2015-03-14 17:49:22 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:49:40 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mSub Load (0.7ms)[0m  [1mSELECT "subs".* FROM "subs"[0m
+  Rendered posts/new.html.erb within layouts/application (4.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:49:40 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:49:41 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mSub Load (0.4ms)[0m  [1mSELECT "subs".* FROM "subs"[0m
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.4ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 132ms (Views: 129.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:49:41 -0700
+
+
+Started GET "/posts/new?post%5Bsub_ids%5D%5B%5D=11" for ::1 at 2015-03-14 17:49:52 -0700
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"sub_ids"=>["11"]}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[36mSub Load (0.5ms)[0m  [1mSELECT "subs".* FROM "subs"[0m
+  Rendered posts/new.html.erb within layouts/application (4.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_nav_header.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "BdxdUuk3MK189SWq8UBxzg"]]
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/subs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/application-c7a8363c88daa1d931c315af7a9ebad4.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/subs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
+
+
+Started GET "/assets/application-2c4d11d08ec8be0a627980275d1802d5.js?body=1" for ::1 at 2015-03-14 17:49:53 -0700
