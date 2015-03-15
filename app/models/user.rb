@@ -20,7 +20,12 @@ class User < ActiveRecord::Base
     primary_key: :id
   )
 
-  has_many :posts
+  has_many :comments, foreign_key: :author_id
+  has_many(
+    :posts,
+    foreign_key: :author_id,
+    primary_key: :id
+    )
 
   def self.generate_session_token
     SecureRandom.urlsafe_base64

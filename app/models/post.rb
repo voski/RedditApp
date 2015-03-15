@@ -13,8 +13,10 @@
 
 class Post < ActiveRecord::Base
   validates :title, :author_id, presence: true
+  has_many :comments
 
   has_many :post_subs
+
   has_many :subs, through: :post_subs, source: :sub
 
 
