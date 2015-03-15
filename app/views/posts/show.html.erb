@@ -1,5 +1,5 @@
 <h1>Post:: <%= @post.title %></h2>
-
+<%= post_nav_bar %>
 <div name="post_contents">
   <h2>post attributes</h2>
 <% @post.attributes.each do |key, val| %>
@@ -18,10 +18,15 @@
 </div>
 
 <div class="post_comments">
-  <% @post.comments.each do |comment| %>
-
+  <% @post.comments.each.with_index do |comment, i| %>
+    <div class="comment_<%= i %>">
+      <p>
+        <strong><%= comment.author.username %></strong>
+        <%= comment.updated_at.strftime("on %c") %>
+      <p>
+      <%= comment.content %>
+    </div>
   <% end %>
-
 </div>
 
 <p>
